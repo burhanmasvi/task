@@ -1,0 +1,522 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		.main
+		{
+			height: 440px;
+			width: 200px;
+/*			background: gray;*/
+			position: relative;
+			border-radius: 10px;
+			margin-right: 50px;
+		}
+		.up
+		{
+			height: 340px;
+			width: 100%;
+/*			background: lightblue;*/
+			border-radius: 10px;
+			box-shadow: 0 0 20px gray;
+		}
+		.up .img
+		{
+			height: 230px;
+			width: 100%;
+			background: url(C:\\Users\\HARSH\\Downloads\\yoga.jpg);
+			background-size: 100% 100%;
+			border-radius: 10px;
+		}
+		.up .info
+		{
+			height: 110px;
+			width: 100%;
+/*			background: lightblue;*/
+			border-radius: 0 0 10px 10px;
+			display: flex;
+			
+		}
+
+		.up .info .left{
+			width: 60%;
+/*			border: 2px solid;*/
+/*			text-align: center;*/
+			padding-left: 10px;
+		}
+		.up .info .left p
+		{
+			font-size: 12px;
+			font-weight: bold;
+		}
+		.up .info .left .icons
+		{
+			height: 15px;
+			width: 100%;
+/*			border: 2px solid red;*/
+			display: flex;
+		}
+		.up .info .left .icons .circle
+		{
+			height: 15px;
+			width: 15px;
+			border: 2px solid;
+			border-radius: 50%;
+			margin-right: 7px;
+		}
+		.up .info .left .icons .x
+		{
+			border: 2px solid gray;
+		}
+		.up .info .left .icons .y
+		{
+			border: 2px solid red;
+		}
+		.up .info .left .icons .z
+		{
+			border: 2px solid blue;
+		}
+		.up .info .right
+		{
+			width: 40%;
+/*			border: 2px solid;*/
+			text-align: right;
+			font-size: 12px;
+			font-weight: bold;
+			padding-right: 10px;
+		}
+		.up .info .right p
+		{
+			color: red ;
+		}
+		.up .info .right p span
+		{
+			color: gray;
+			font-size: 8px;
+		}
+		
+		.up .info .right .icons
+		{
+			height: 15px;
+			width: 100%;
+/*			border: 2px solid red;*/
+			display: flex;
+/*			padding-left: 10px;*/
+			
+		}
+		.up .info .right .icons .circle
+		{
+			height: 15px;
+			width: 15px;
+			border: 1px solid;
+			border-radius: 50%;
+			margin-left: 10px;
+			font-size: 10px;
+			text-align: center;
+		}
+		.down
+		{
+			height: 70px;
+			width: 200px;
+/*			background: lightcoral;*/
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			border-radius: 10px;
+			box-shadow: 0 0 20px gray;
+			display: flex;
+
+		}
+		.down .left2
+		{
+			height: 70px;
+			width: 65%;
+/*			border: 1px solid;*/
+			text-align: center;
+		}
+		.down .right2
+		{
+			height: 70px;
+			width: 35%;
+/*			border: 1px solid;*/
+			text-align: center;
+			background: purple;
+			border-radius: 0 10px 10px 0;
+			color: white;
+		}
+		.down .left2 .a
+		{
+			font-size: 12px;
+			color: gray;
+		}
+		.down .left2 .b
+		{
+			color: red;
+		}
+		.Main1
+		{
+			display: flex;
+
+		}
+		.up .img2
+		{
+			height: 230px;
+			width: 100%;
+			background: url(C:\\Users\\HARSH\\Downloads\\long_sleeve_denim_jacket.jpg);
+			background-size: 100% 100%;
+			border-radius: 10px;
+		}
+		.up .img3
+		{
+			height: 230px;
+			width: 100%;
+			background: url(C:\\Users\\HARSH\\Downloads\\hush_puppies.jpg);
+			background-size: 100% 100%;
+			border-radius: 10px;
+		}
+		.up .img4
+		{
+			height: 230px;
+			width: 100%;
+			background: url(C:\\Users\\HARSH\\Downloads\\athens_skirt.jpg);
+			background-size: 100% 100%;
+			border-radius: 10px;
+		}
+		.img .pqr
+		{
+			height: 30px;
+			width: 100%;
+/*			border: 2px solid red;*/
+			position: absolute;
+			top: 10px;
+			left: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px 0 10px;
+		}
+		.img .pqr .discount
+		{
+			height: 22px;
+			width: 40px;
+			background: red;
+			color: white;
+			text-align: center;
+			line-height: 22px;
+			border-radius: 5px;
+		}
+		.img .pqr .ikon
+		{
+			height: 30px;
+			width: 30px;
+			background: white;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+		}
+		.img .pqr .ikon .fa-heart-o
+		{
+			font-size: 18px;
+		}
+
+
+		.img2 .pqr
+		{
+			height: 30px;
+			width: 100%;
+/*			border: 2px solid red;*/
+			position: absolute;
+			top: 10px;
+			left: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px 0 10px;
+		}
+		.img2 .pqr .discount
+		{
+			height: 22px;
+			width: 40px;
+			background: red;
+			color: white;
+			text-align: center;
+			line-height: 22px;
+			border-radius: 5px;
+		}
+		.img2 .pqr .ikon
+		{
+			height: 30px;
+			width: 30px;
+			background: white;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+		}
+		.img2 .pqr .ikon .fa-heart-o
+		{
+			font-size: 18px;
+		}
+
+
+		.img3 .pqr
+		{
+			height: 30px;
+			width: 100%;
+/*			border: 2px solid red;*/
+			position: absolute;
+			top: 10px;
+			left: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px 0 10px;
+		}
+		.img3 .pqr .discount
+		{
+			height: 22px;
+			width: 40px;
+			background: red;
+			color: white;
+			text-align: center;
+			line-height: 22px;
+			border-radius: 5px;
+		}
+		.img3 .pqr .ikon
+		{
+			height: 30px;
+			width: 30px;
+			background: white;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+		}
+		.img3 .pqr .ikon .fa-heart-o
+		{
+			font-size: 18px;
+		}
+
+
+		.img4 .pqr
+		{
+			height: 30px;
+			width: 100%;
+/*			border: 2px solid red;*/
+			position: absolute;
+			top: 10px;
+			left: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px 0 10px;
+		}
+		.img4 .pqr .discount
+		{
+			height: 22px;
+			width: 40px;
+			background: red;
+			color: white;
+			text-align: center;
+			line-height: 22px;
+			border-radius: 5px;
+		}
+		.img4 .pqr .ikon
+		{
+			height: 30px;
+			width: 30px;
+			background: white;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+		}
+		.img4 .pqr .ikon .fa-heart-o
+		{
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+<div class="Main1">
+	<div class="main">
+		<div class="up">
+			<div class="img">
+				<div class="pqr">
+					<div class="discount">-25%</div>
+					<div class="ikon"><i class="fa fa-heart-o"></i></div>
+				</div>
+			</div>
+			<div class="info">
+				<div class="left">
+					<p>White traditional long dress</p>
+					<div class="icons">
+						<div class="circle x"></div>
+						<div class="circle y"></div>
+						<div class="circle z"></div>
+					</div>
+					<p><i class="fa fa-star-o"></i>4.8</p>
+				</div>
+
+				<div class="right">
+					<p>$3.99 <br><span>$5.99</span></p>
+					<div class="icons">
+						<div class="circle">S</div>
+						<div class="circle">M</div>
+						<div class="circle">L</div>
+					</div>
+					<p>BUY+</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="down">
+			<div class="left2">
+				<p class="a">Monday Happy</p>
+				<p class="b">#MONHPY</p>
+			</div>
+			<div class="right2">
+				<p>20%<br>OFF</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="main">
+
+		<div class="up">
+			<div class="img2">
+				<div class="pqr">
+					<div class="discount">-25%</div>
+					<div class="ikon"><i class="fa fa-heart-o"></i></div>
+				</div>
+			</div>
+			<div class="info">
+				<div class="left">
+					<p>Long sleeve denim jacket</p>
+					<div class="icons">
+						<div class="circle x"></div>
+						<div class="circle y"></div>
+						<div class="circle z"></div>
+					</div>
+					<p><i class="fa fa-star-o"></i>4.8</p>
+				</div>
+
+				<div class="right">
+					<p>$3.99 <br><span>$5.99</span></p>
+					<div class="icons">
+						<div class="circle">S</div>
+						<div class="circle">M</div>
+						<div class="circle">L</div>
+					</div>
+					<p>BUY+</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="down">
+			<div class="left2">
+				<p class="a">Payday Surprise</p>
+				<p class="b">#SRPSPYDY</p>
+			</div>
+			<div class="right2">
+				<p>20%<br>OFF</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="main">
+
+		<div class="up">
+			<div class="img3">
+				<div class="pqr">
+					<div class="discount">-25%</div>
+					<div class="ikon"><i class="fa fa-heart-o"></i></div>
+				</div>
+			</div>
+			<div class="info">
+				<div class="left">
+					<p>Hush Puppies</p>
+					<div class="icons">
+						<div class="circle x"></div>
+						<div class="circle y"></div>
+						<div class="circle z"></div>
+					</div>
+					<p><i class="fa fa-star-o"></i>4.8</p>
+				</div>
+
+				<div class="right">
+					<p>$3.99 <br><span>$5.99</span></p>
+					<div class="icons">
+						<div class="circle">S</div>
+						<div class="circle">M</div>
+						<div class="circle">L</div>
+					</div>
+					<p>BUY+</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="down">
+			<div class="left2">
+				<p class="a">First Order</p>
+				<p class="b">#HPYFRST</p>
+			</div>
+			<div class="right2">
+				<p>20%<br>OFF</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="main">
+
+		<div class="up">
+			<div class="img4">
+				<div class="pqr">
+					<div class="discount">-25%</div>
+					<div class="ikon"><i class="fa fa-heart-o"></i></div>
+				</div>
+			</div>
+			<div class="info">
+				<div class="left">
+					<p>Athens skirt</p>
+					<div class="icons">
+						<div class="circle x"></div>
+						<div class="circle y"></div>
+						<div class="circle z"></div>
+					</div>
+					<p><i class="fa fa-star-o"></i>4.8</p>
+				</div>
+
+				<div class="right">
+					<p>$3.99 <br><span>$5.99</span></p>
+					<div class="icons">
+						<div class="circle">S</div>
+						<div class="circle">M</div>
+						<div class="circle">L</div>
+					</div>
+					<p>BUY+</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="down">
+			<div class="left2">
+				<p class="a">Vegetarian Food</p>
+				<p class="b">#VEGANLOVE</p>
+			</div>
+			<div class="right2">
+				<p>20%<br>OFF</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
