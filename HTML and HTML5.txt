@@ -1,0 +1,210 @@
+
+HTML AND HTML5 assignment
+
+1)Are the HTML tags and elements the same thing?
+
+ Elements are not tags. The element is one thing, and the tag (be it start or end tag) is another. 
+ The HTML element is everything from the start tag to the end tag:
+ <tagname>Content goes here...</tagname>
+
+ The <html> element is the root element and it defines the whole HTML document.
+ It has a start tag <html> and an end tag </html>.
+
+ Then, inside the <html> element there is a <body> element:
+ The <body> element defines the document's body.
+ It has a start tag <body> and an end tag </body>.
+
+ The <h1> element defines a heading.
+ It has a start tag <h1> and an end tag </h1>
+
+2)What are tags and attributes in HTML?
+ Tags are used to delimit the start and end of elements in the markup. (...) The start and end tags of certain  normal elements can be omitted, (...)
+ The contents of the element must be placed between just after the start tag (which might be implied, in  certain cases) and just before the end tag (which again,  might be implied, in certain cases).
+
+ HTML attributes are special words used inside the opening tag to control the element's behaviour. HTML  attributes are a modifier of an HTML element type. An  attribute either modifies the default functionality of  an element type or provides functionality to certain element types unable to function correctly without them.   In HTML syntax, an attribute is added to an HTML start tag.
+ <element attribute="value">element content</element>
+
+3)What are void elements in HTML?
+ There is a special group of elements that only have start tags and does not contain any content within it,  these elements are called void elements. Void elements  doesn’t have ending tags and can only have attributes  but do not contain any kind of content. These elements can have backslash before ending of start tag but that   is completely optional. Example of such elements are <br>, <hr>, <img>, <input>, <link>, <base>, <meta>,  <param>, <area>, <embed>, <col>, <track>, <source> etc.
+
+ Characteristics:
+
+ Void elements do not have end tags.
+ Void elements cannot have content inside it.
+ Void elements have attributes.
+ Void elements cannot be nested.
+
+
+4) What are HTML Entities? 
+ Character entities are used to display reserved characters in HTML.
+ Reserved characters in HTML must be replaced with character entities.
+
+5)What are different types of lists in HTML?
+ HTML lists allow web developers to group a set of related items in lists.
+ 1.unordered list
+ An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+ 2.ordered list
+ An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+ 3.description list
+ A description list is a list of terms, with a description of each term.
+ The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:
+
+6)What is the ‘class’ attribute in HTML?
+ The HTML class attribute is used to specify a class for an HTML element.
+ The HTML class attribute specifies one or more class names for an element
+ Classes are used by CSS and JavaScript to select and access specific elements
+ The class attribute can be used on any HTML element
+
+7)What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?
+ A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page.
+
+8)What are the various formatting tags in HTML?
+ HTML contains several elements for defining text with a special meaning.
+ HTML Formatting Elements
+ Formatting elements were designed to display special types of text:
+
+ <b> - Bold text
+ <strong> - Important text
+ <i> - Italic text
+ <em> - Emphasized text
+ <mark> - Marked text
+ <small> - Smaller text
+ <del> - Deleted text
+ <ins> - Inserted text
+ <sub> - Subscript text
+ <sup> - Superscript text
+
+9)How is Cell Padding different from Cell Spacing?
+ HTML Table - Cell Padding. Cell padding is the space between the cell edges and the cell content.
+ The HTML <table> cellspacing Attribute is used to specify the space between the cells.
+
+10)How can we club two or more rows or columns into a single row or column in an HTML table?
+ It can be done by using the rowspan and colspan attribute in HTML. The rowspan is used to merge or combine the number of cells in a row whereas the colspan is used to  merge column cells in a table.
+
+11)What is the difference between a block-level element and an inline element?
+  There are two display values: block and inline.
+  A block-level element always starts on a new line and takes up the full width available.
+  An inline element does not start on a new line and it only takes up as much width as necessary.
+  The <div> element is a block-level and is often used as a container for other HTML elements.
+  The <span> element is an inline container used to mark up a part of a text, or a part of a document.
+
+12)How to create a Hyperlink in HTML?
+ HTML links are hyperlinks.
+ You can click on a link and jump to another document.  
+ Use the <a> element to define a link. Syntax is <a href="url">link text</a>.
+ Use the href attribute to define the link address.
+ Use the target attribute to define where to open the linked document.
+ The target attribute can have one of the following values:
+
+ _self - Default. Opens the document in the same window/tab as it was clicked
+ _blank - Opens the document in a new window or tab
+ _parent - Opens the document in the parent frame
+ _top - Opens the document in the full body of the window
+ Example <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+ Use the <img> element (inside <a>) to use an image as a link.
+
+13)What is the use of an iframe tag?
+  The <iframe> tag specifies an inline frame.
+  An inline frame is used to embed another document within the current HTML document.
+
+14)What is the use of a span tag? Explain with example?
+  The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+  The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+  A <span> element which is used to color a part of a text:
+  <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+15)How to insert a picture into a background image of a web page?
+  Background Image on a Page
+  If you want the entire page to have a background image, you must specify the background image on the <body> element:
+
+ Example
+ Add a background image for the entire page:
+
+ <style>
+ body{
+      background-image: url('img_girl.jpg');
+ }
+ </style>
+ 
+16)How are active links different from normal links?
+  Typically a Link is displayed in three different colors based on the usage.
+  An normal(unvisited link) is underlined and blue. A visited link is underlined and purple. An active link is underlined and red.
+
+17)What are the different tags to separate sections of text?
+  We separate a section of texts in HTML using the below tags: <br> tag – It is used to separate the line of text. It breaks the current line and shifts the flow of   the text to a new line.
+  <p> tag–This tag is used to write a paragraph of text.
+
+18)What is SVG?
+  SVG stands for Scalable Vector Graphics
+  SVG is used to define vector-based graphics for the Web
+  SVG defines the graphics in XML format
+  Every element and every attribute in SVG files can be animated
+
+19)What is difference between HTML and XHTML?
+  HTML stands for Hypertext Markup Language. XHTML stands for Extensible Hypertext Markup Language. 
+ HTML and XHTML are both markup languages used to create web pages and applications. HTML and XHTML have some key differences that set them apart, but they also share   some similarities. XHTML is an extended version of HTML, and both languages are used for developing web and Android-based applications.
+ Html:The format is a document file format.
+ Xhtml:	The format is a markup language.
+
+20) What are logical and physical tags in HTML?
+  
+ Physical and Logical tags are used in HTML for better visibility and understanding of the text by the user on the web page. However, both tags differ from each other  as suggested by their names.
+
+ Logical Tags are used in HTML to display the text according to the logical styles.
+ Logical Tags  <var>	Defines a variable.
+ Physical Tags are used in HTML to provide actual physical formatting to the text.
+ Physical Tags <b>	Defines bold text.
+
+
+
+
+
+HTML5
+1)What are the new tags added in HTML5?
+ Semantic tags: <article>;<aside>
+ Form tags:<datalist>;<output>
+ Graphic tags:<svg>;<canvas>
+ Media tags:<audio>;<video>;<embed>
+
+2)How to embed audio and video in a webpage?
+ To embed audio in HTML, we use the <audio> tag. 
+ Syntax:
+ <audio>
+    <source src="file_name" type="audio_file_type">
+ </audio> 
+ To embed audio in HTML, we use the <video> tag. 
+ Syntax:
+ <video>
+    <source src="file_name" type="video_file_type">
+ </video>
+
+3)Semantic element in HTML5?
+ A semantic element clearly describes its meaning to both the browser and the developer.
+ Examples of semantic elements:  Clearly defines its content.
+ <article>
+ <aside>
+ <details>
+ <figcaption>
+ <figure>
+ <footer>
+ <header>
+ <main>
+ <mark>
+ <nav>
+ <section>
+ <summary>
+ <time>
+
+4)Canvas and SVG tags?
+
+ SVG: Vector based (composed of shapes)
+ SVG has better scalability. So it can be printed with high quality at any resolution.
+ SVG gives better performance with smaller number of objects or larger surface.
+ SVG can be modified through script and CSS.
+
+ Cnavas:Raster based (composed of pixel)
+ Canvas has poor scalability. Hence it is not suitable for printing on higher resolution.
+ Canvas gives better performance with smaller surface or larger number of objects.
+ Canvas can be modified through script only.
+
+

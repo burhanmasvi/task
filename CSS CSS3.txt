@@ -1,0 +1,126 @@
+1) What are the benefits of using CSS?
+ There are a number of benefits of CSS, including:
+  Faster Page Speed. More code means slower page speed. ...
+  Better User Experience. CSS not only makes web pages easy on the eye, it also allows for user-friendly formatting. ...
+  Quicker Development Time. ...
+  Easy Formatting Changes. ...
+  Compatibility Across Devices.
+
+2) What are the disadvantages of CSS?
+ Confusion due to many CSS levels
+ Cross-Browser Issues
+ Security Issues
+ Extra Work for Developers
+
+3)What is the difference between CSS2 and CSS3?
+ CSS2
+  CSS2 is the improvement of CSS1. It removed the not fully interoperable features. It also included the browser extensions.
+  It had many new features such as absolute, relative and fixed positioning of elements. It supported different media types.  It also included new font properties such   as shadow.
+ CSS3
+  It has even included new selectors along with new combinator and new pseudo-elements.
+  CSS3 has several new CSS properties. It supports animation which is not a part of earlier recommendations.
+  There were various properties added such as transforms, gradients, animation and transition for animation effect in the website.
+  Recent add-ons are like border-radius, box-shadow, flex-box and CSS grid. 
+
+4)Name a few CSS style components
+ At its most basic level, CSS consists of two components:
+ Properties: These are human-readable identifiers that indicate which stylistic features you want to modify. For example, font-size , width , background-color .
+ Values: Each property is assigned a value. This value indicates how to style the property.
+
+5)What do you understand by CSS opacity?
+  The opacity property sets the opacity level for an element.
+  The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent.
+
+6)How can the background color of an element be changed?
+ The background-color property sets the background color of an element.
+ The background of an element is the total size of the element, including padding and border.
+ Set the background color for a page:
+ body {background-color: coral;}
+
+7)How can image repetition of the backup be controlled?
+  Show the background image only once:
+  body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  }
+
+8)What is the use of the background-position property?
+  The background-position property sets the starting position of a background image.
+  CSS Syntax
+  background-position: value;
+ value:
+ left top
+ left center
+ left bottom
+ right top
+ right center
+ right bottom
+ center top
+ center center
+ center bottom
+
+9)Which property controls the image scroll in the background?
+  The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.
+  CSS Syntax
+  background-attachment: scroll|fixed|local|initial|inherit;
+
+10) Why should background and color be used as separate properties?
+   CSS Background Property vs Background-color Property
+  The main difference between background and Background-color CSS is that the CSS background property is the shorthand property of all background properties. At the    same time, the background-color is the property that is used to specify the background color.
+
+11)How to center block elements using CSS1?
+  Center block elements using margin property: We need to specify the margin from left and right such that it looks centered. We do not need to do this manually, we   have one property value “auto” which will automatically set the margin such that our block element is placed in the center.
+
+12)How to maintain the CSS specifications? 
+ The CSS specifications are maintained by the World Wide Web Consortium (W3C).
+  
+
+13)What are the ways to integrate CSS as a web page?
+ CSS can be added to HTML documents in 3 ways:
+ Inline - by using the style attribute inside HTML elements.
+ Internal - by using a <style> element in the <head> section.
+ External - by using a <link> element to link to an external CSS file.
+
+14)What is embedded style sheets?
+ Internal CSS is embedded style sheets.
+ An internal CSS is used to define a style for a single HTML page.
+ An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+
+15)What are the external style sheets?
+  An external style sheet is used to define the style for many HTML pages.
+  To use an external style sheet, add a link to it in the <head> section of each HTML page:
+  <link rel="stylesheet" href="styles.css">
+  The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.
+
+16)What are the advantages and disadvantages of using external style sheets?
+ The advantages of External Style Sheets are as follows :
+ With the help of External Style Sheets, the styles of numerous documents can be organized from one single file.
+ In External Style Sheets, Classes can be made for use on numerous HTML element types in many forms of the site.
+ In complex contexts, Methods like selector and grouping can be implemented to apply styles.
+ 
+ The disadvantages of External Style Sheets are as follows :
+ An extra download is essential to import style information for each file.
+ The execution of the file may be deferred till the external style sheet is loaded.
+ While implementing style sheets, we need to test Web pages with multiple browsers in order to check compatibility issues.
+
+17)What is the meaning of the CSS selector?
+  A CSS selector selects the HTML element(s) you want to style.
+  CSS selectors are used to "find" (or select) the HTML elements you want to style.
+  CSS element Selector
+  CSS id Selector
+  CSS class Selector
+  CSS Universal Selector
+  
+18)What are the media types allowed by CSS?
+  4 types of media types by css
+  all	    Used for all media type devices
+  print	    Used for printers
+  screen    Used for computer screens, tablets, smart-phones etc.
+  speech    Used for screenreaders that "reads" the page out loud
+
+19)What is the rule set?
+ A rule or "rule set" is a statement that tells browsers how to render particular elements on an HTML page. 
+ A CSS rule set contains one or more selectors and one or more declarations. 
+ The selector(s), points to an HTML element. 
+ The declaration(s),it declares the element with a property and value.
+
